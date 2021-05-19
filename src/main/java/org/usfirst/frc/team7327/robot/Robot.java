@@ -72,10 +72,10 @@ public class Robot extends TimedRobot {
     nav.reset();
     swerve.setALLBrake(false); 
     switch(m_chooser.getSelected()){
-      case "FarL": 
+      case "Paths": 
       switch(m_chosen.getSelected()){
-        case "Default": Autonomous.Auto(); break; case "PlayerStation": Autonomous.Auto2(); break; 
-        case "P3": Autonomous.Auto3(); break; case "HailMary": Autonomous.Auto4(); break;   
+        case "Default": Autonomous.path1(); break; case "PlayerStation": Autonomous.path2(); break; 
+        case "P3": Autonomous.path3(); break; case "HailMary": Autonomous.Auto4(); break;   
         case "Defense": Autonomous.Auto21(); break;   
       } break; 
       case "Left": 
