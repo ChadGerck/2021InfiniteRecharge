@@ -183,7 +183,11 @@ public class Autonomous {
         //shootball
     }
     public static void path1(){
-
+    
+        Robot.MoveTo(0, 1.2192, 90);
+        Robot.MoveTo(0, 0.3048, 0);
+        Robot.MoveTo(0, 0, 90);
+        Robot.MoveTo(0, 0.9144, 0);
     }
     public static void path2(){
         Robot.MoveTo(0.3048,0,0);
