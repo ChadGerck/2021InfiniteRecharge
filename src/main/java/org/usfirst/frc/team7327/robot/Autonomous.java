@@ -209,5 +209,11 @@ public class Autonomous {
         Robot.MoveTo(0.6096,0,0);
         Robot.MoveTo(0.3048,1.2192,0);
     }
-
+    public static void path4(){
+        Robot.MoveTo(0,-5,-90);
+        Robot.MoveTo(2,-5,-90);
+        Robot.MoveTo(2,5,90;
+        Robot.MoveTo(3,5,0);
+        Robot.MoveTo();
+    }
 }
