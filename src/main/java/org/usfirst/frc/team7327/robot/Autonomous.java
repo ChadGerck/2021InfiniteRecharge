@@ -182,7 +182,14 @@ public class Autonomous {
         //linealine
         //shootball
     }
-    
+    public static void path1(){
 
+    }
+    public static void path2(){
+
+    }
+    public static void path3(){
+
+    }
 
 }
