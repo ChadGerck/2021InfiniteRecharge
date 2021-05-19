@@ -188,7 +188,6 @@ public class Autonomous {
         Robot.MoveTo(0, 0.3048, 0);
         Robot.MoveTo(0, 0, 90);
         Robot.MoveTo(0, 0.9144, 0);
-        dfgasgagasg
     }
     public static void path2(){
         Robot.MoveTo(0.3048,0,0);
