@@ -74,8 +74,8 @@ public class Robot extends TimedRobot {
     switch(m_chooser.getSelected()){
       case "Paths": 
       switch(m_chosen.getSelected()){
-        case "Default": Autonomous.path1(); break; case "PlayerStation": Autonomous.path2(); break; 
-        case "P3": Autonomous.path3(); break; case "HailMary": Autonomous.Auto4(); break;   
+        case "Path1": Autonomous.path1(); break; case "Path2": Autonomous.path2(); break; 
+        case "Path3": Autonomous.path3(); break; case "HailMary": Autonomous.Auto4(); break;   
         case "Defense": Autonomous.Auto21(); break;   
       } break; 
       case "Left": 

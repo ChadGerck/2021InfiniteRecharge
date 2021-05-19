@@ -190,8 +190,14 @@ public class Autonomous {
         Robot.MoveTo(0, 0.9144, 0);
     }
     public static void path2(){
+        Robot.MoveTo(0.4572,0,0);
+        Robot.MoveTo(0,0.1524,0);
+        Robot.MoveTo(0.21336,0,0);
+        Robot.MoveTo(0.3048,0.3048,0);
         Robot.MoveTo(0.3048,0,0);
-        Robot.MoveTo();
+        Robot.MoveTo(0.1524,0.1524,0);
+        Robot.MoveTo(0.6096,0,0);
+
 
     }
     public static void path3(){
