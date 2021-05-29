@@ -2,7 +2,7 @@
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj.command.Scheduler;
+import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 
@@ -53,6 +53,7 @@ public class Robot extends TimedRobot {
     SmartDashboard.putData("the Auto: ", m_chosen);
   }
   @Override public void robotPeriodic() { 
+    CommandScheduler.getInstance().run();
     double dist;
     if(m_LIDAR.get() < 1) dist = 0;
     else dist = (m_LIDAR.getPeriod()*1000000.0/10.0) - off; //convert to distance. sensor is high 10 us for every centimeter. 
@@ -138,7 +139,7 @@ public class Robot extends TimedRobot {
   @Override public void autonomousPeriodic() {
     Drivetrain.updateOdometry();
   }
-  @Override public void teleopPeriodic() { Scheduler.getInstance().run();
+  @Override public void teleopPeriodic() { 
     Drivetrain.updateOdometry();
     SmartDashboard.putNumber("ODOX", Drivetrain.m_odometry.getPoseMeters().getTranslation().getX());
     SmartDashboard.putNumber("ODOY", Drivetrain.m_odometry.getPoseMeters().getTranslation().getY());

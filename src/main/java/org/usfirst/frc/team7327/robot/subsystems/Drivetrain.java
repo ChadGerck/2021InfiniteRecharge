@@ -3,7 +3,7 @@ package org.usfirst.frc.team7327.robot.subsystems;
 import edu.wpi.first.wpilibj.AnalogPotentiometer;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Servo;
-import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import edu.wpi.first.wpilibj.geometry.Pose2d;
 import edu.wpi.first.wpilibj.geometry.Rotation2d;
 import edu.wpi.first.wpilibj.geometry.Translation2d;
@@ -20,11 +20,10 @@ import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 import org.usfirst.frc.team7327.robot.ElevatorModule;
 import org.usfirst.frc.team7327.robot.Robot;
 import org.usfirst.frc.team7327.robot.ShootModule;
-import org.usfirst.frc.team7327.robot.commands.Drive;
 import org.usfirst.frc.team7327.robot.SwerveModule;
 import org.usfirst.frc.team7327.robot.TurnModule;
 
-public class Drivetrain extends Subsystem {
+public class Drivetrain extends SubsystemBase {
   public TurnModule turning;   
   public ShootModule shooter; 
   private static final Translation2d m_frontLeftLocation = new Translation2d(0.381, -0.381);
@@ -63,7 +62,6 @@ public class Drivetrain extends Subsystem {
     ServoMotor = new Servo(0);
     ServoMotor.setAngle(270);
   }
-  @Override public void initDefaultCommand() { setDefaultCommand(new Drive()); }
   public static void setModule(String loc,double degrees,double power){
     switch(loc){case "FL":moduleFL.set(degrees,power);break; case "FR":moduleFR.set(degrees,power);break;
                 case "BL":moduleBL.set(degrees,power);break; case "BR":moduleBR.set(degrees,power);break;

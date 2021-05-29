@@ -2,7 +2,7 @@ package org.usfirst.frc.team7327.robot.commands;
 
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.usfirst.frc.team7327.robot.Robot;
 import org.usfirst.frc.team7327.robot.SwerveMath;
@@ -11,9 +11,9 @@ import static org.usfirst.frc.team7327.robot.Robot.oi;
 
 // import org.usfirst.frc.team7327.robot.ElevatorPositions;
 
-public class Drive extends Command {
-  public Drive() { requires(Robot.swerve); }
-  protected void initialize() { }
+public class Drive extends CommandBase {
+  public Drive() { }
+  public void initialize() { }
   double finalAngle, Redthrottle, ballThrottle, rotMag, rightArc, directMag, steering_adjust, x; 
   double SteerP = -0.025;
   boolean fixRotation, rocketAngle = true, evadeMode = false; 
@@ -25,10 +25,8 @@ public class Drive extends Command {
   double e = 270;
   //DoubleSolenoid.Value Pincher, Extendor, pullout = Value.kOff; 
 
-  protected void execute() {
+  public void execute() {
 
-
-    
     if(oi.LeftBumperDown(2)){ Drivetrain.setRawElevator(0.75); }
     else if(oi.RightBumperDown(2)){ Drivetrain.setRawElevator(-0.75);}
     else{Drivetrain.setRawElevator(0);}
@@ -97,7 +95,7 @@ public class Drive extends Command {
     // ElevatorPositions.MoveElevators();
 
   }
-  protected boolean isFinished() { return false;}
-  protected void end() {}
+  public boolean isFinished() { return false;}
+  public void end() {}
 
 }
