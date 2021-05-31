@@ -1,4 +1,4 @@
-package org.usfirst.frc.team7327.robot.subsystems;
+package robot.subsystems;
 
 import edu.wpi.first.wpilibj.AnalogPotentiometer;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
@@ -17,11 +17,11 @@ import com.ctre.phoenix.motorcontrol.can.TalonFX;
 import com.ctre.phoenix.motorcontrol.can.VictorSPX;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
-import org.usfirst.frc.team7327.robot.ElevatorModule;
-import org.usfirst.frc.team7327.robot.Robot;
-import org.usfirst.frc.team7327.robot.ShootModule;
-import org.usfirst.frc.team7327.robot.SwerveModule;
-import org.usfirst.frc.team7327.robot.TurnModule;
+import robot.ElevatorModule;
+import robot.Robot;
+import robot.ShootModule;
+import robot.SwerveModule;
+import robot.TurnModule;
 
 public class Drivetrain extends SubsystemBase {
   public TurnModule turning;   

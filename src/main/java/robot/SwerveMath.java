@@ -1,6 +1,6 @@
-package org.usfirst.frc.team7327.robot;
+package robot;
 
-import org.usfirst.frc.team7327.robot.subsystems.Drivetrain;
+import robot.subsystems.Drivetrain;
 
 public class SwerveMath {
     static double wheelXcos, wheelYsin, NWwheelX, NWwheelY, NEwheelX, NEwheelY, SWwheelX, SWwheelY, SEwheelX, SEwheelY, max, 

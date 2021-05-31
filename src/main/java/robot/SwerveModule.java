@@ -1,4 +1,4 @@
-package org.usfirst.frc.team7327.robot;
+package robot;
 
 import com.revrobotics.CANEncoder;
 import com.revrobotics.CANSparkMax;

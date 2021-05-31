@@ -1,4 +1,4 @@
- package org.usfirst.frc.team7327.robot;
+ package robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.Timer;
@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import java.util.concurrent.TimeUnit;
 
 import com.kauailabs.navx.frc.AHRS;
-import org.usfirst.frc.team7327.robot.subsystems.Drivetrain;
+import robot.subsystems.Drivetrain;
 
 //import edu.wpi.first.cameraserver.CameraServer;
 import edu.wpi.first.wpilibj.Compressor;

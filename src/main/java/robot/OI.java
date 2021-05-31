@@ -1,4 +1,4 @@
-package org.usfirst.frc.team7327.robot;
+package robot;
 
 import edu.wpi.first.networktables.NetworkTableInstance;
 import edu.wpi.first.wpilibj.XboxController;

@@ -1,13 +1,13 @@
-package org.usfirst.frc.team7327.robot.commands;
+package robot.commands;
 
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import org.usfirst.frc.team7327.robot.Robot;
-import org.usfirst.frc.team7327.robot.SwerveMath;
-import org.usfirst.frc.team7327.robot.subsystems.Drivetrain;
-import static org.usfirst.frc.team7327.robot.Robot.oi;
+import robot.Robot;
+import robot.SwerveMath;
+import robot.subsystems.Drivetrain;
+import static robot.Robot.oi;
 
 // import org.usfirst.frc.team7327.robot.ElevatorPositions;
 

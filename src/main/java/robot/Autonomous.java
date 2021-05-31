@@ -1,5 +1,5 @@
-package org.usfirst.frc.team7327.robot;
-import org.usfirst.frc.team7327.robot.subsystems.Drivetrain;
+package robot;
+import robot.subsystems.Drivetrain;
 
 // import org.usfirst.frc.team7327.robot.subsystems.Drivetrain;
 
